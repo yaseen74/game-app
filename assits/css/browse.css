@@ -457,6 +457,8 @@
         font-size: 14px;
     }
 
+    /* content */
+    
     .MainContainer .contents .popular .populars {
         flex-wrap: wrap;
         justify-content: center;
@@ -471,7 +473,7 @@
         width: 100%;
     }
 
-    /* content */
+  
     .MainContainer .contents .contents1 {
         flex-wrap: wrap;
     }
