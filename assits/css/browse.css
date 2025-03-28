@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DarkGrey: #212121;
+    --LightGrey: #5c5a5a;
+    --pinkcolor: #EC6090;
+    --mainfont: "Tektur", sans-serif;
+    --secondfont: "Big Shoulders", sans-serif;
+}
+
+.MainContainer {
+    width: 100%;
+    background-color: var(--DarkGrey);
+    padding: 3vh 7% 1vh;
+}
+
+/* دول الهيدر */
+
+.MainContainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MainContainer .header .logo {
+    width: 15%;
+}
+
+.MainContainer .header .logo img {
+    width: 100%;
+}
+
+.MainContainer .header .hline {
+    width: 1px;
+    height: 60px;
+    background-color: rgba(240, 248, 255, 0.247);
+}
+
+.MainContainer .header .search {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--LightGrey);
+    border-radius: 25px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 20px;
+}
+
+.MainContainer .header .search input {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 80%;
+    outline: none;
+}
+
+.MainContainer .header ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.MainContainer .header ul li a {
+    color: #666;
+    text-decoration: none;
+    font-family: var(--secondfont);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.MainContainer .header ul li a:hover,
+.MainContainer .header ul .active a {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .header ul .profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--LightGrey);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.MainContainer .header ul .profile:hover {
+    background-color: var(--pinkcolor);
+}
+
+.MainContainer .header ul .profile:hover a {
+    color: aliceblue;
+}
+
+.MainContainer .header ul .profile img {
+    border-radius: 50%;
+}
+
+@media screen and (max-width:920px) {
+    .MainContainer .header {
+        display: block;
+    }
+
+    .hline {
+        display: none;
+    }
+
+    .MainContainer .header .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .MainContainer .header .search {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .MainContainer .header ul {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .MainContainer .header {
+        display: block;
+    }
+
+    .MainContainer .header .hline {
+        display: none;
+    }
+
+    .MainContainer .header .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .MainContainer .header .search {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .MainContainer .header ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    .MainContainer .header ul li {
+        padding: 0 7px;
+    }
+
+    .MainContainer .header ul li a {
+        font-size: 14px;
+    }
+}
+
+/* دول المحتوى */
+
+.MainContainer .contents {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGrey);
+    border-radius: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.MainContainer .contents .contents1 {
+    width: 100%;
+    display: flex;
+    border-radius: 30px;
+    background-color: var(--LightGrey);
+    gap: 10px;
+}
+
+.MainContainer .contents .content1 {
+    width: 60%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGrey);
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.MainContainer .content1 .games {
+    width: 100%;
+}
+
+.MainContainer .contents .contents1 .content1 .games h1,
+.MainContainer .contents .contents1 .content2 .downloads h2,
+.MainContainer .contents .popular h2 {
+    color: var(--pinkcolor);
+    font-family: var(--mainfont);
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.MainContainer .contents .content1 .games h1 span,
+.MainContainer .contents .content2 .downloads h2 span,
+.MainContainer .contents .popular h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.MainContainer .contents .content1 .games .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.MainContainer .contents .content1 .games .cards .card {
+    width: 30%;
+    /* background-color: var(--LightGrey); */
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.MainContainer .contents .content1 .games .cards .card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.MainContainer .contents .content1 .games .cards .card .data {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 20px;
+    color: #757373;
+    font-family: var(--secondfont);
+    font-size: 18px;
+}
+
+.MainContainer .contents .content1 .games .cards .card .data h3,
+.MainContainer .contents .contents1 .content2 .downloads .game .datagame h3 {
+    color: aliceblue;
+    font-family: var(--mainfont);
+}
+
+.MainContainer .contents .content1 .games .cards .card .data .fa-star,
+.MainContainer .contents .contents1 .content2 .game .datagame .datalogo p .fa-star {
+    color: yellow;
+}
+
+.MainContainer .contents .content1 .games .cards .card .data .fa-download,
+.MainContainer .contents .contents1 .content2 .game .datagame .datalogo p .fa-download,
+.MainContainer .contents .contents1 .content2 .game .download .fa-download {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .contents .content1 .games .cards .card .data .dataleft p {
+    font-size: 16px;
+}
+
+.MainContainer .contents .contents1 .content2 {
+    width: 40%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGrey);
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.MainContainer .contents .contents1 .content2 .downloads .game .img img {
+    border-radius: 20px;
+}
+
+.MainContainer .contents .contents1 .content2 .downloads .game {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+.MainContainer .contents .contents1 .content2 .downloads .game .datagame p {
+    color: var(--LightGrey);
+}
+
+.MainContainer .contents .contents1 .content2 .downloads .game .datagame .datalogo {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.MainContainer .contents .contents1 .content2 .downloads .game .datagame .datalogo p {
+    color: aliceblue;
+}
+
+.MainContainer .contents .contents1 .content2 .downloads .game .download .fa-download {
+    padding: 10px;
+    background-color: var(--LightGrey);
+    border-radius: 50%;
+}
+
+.MainContainer .contents .contents1 .content2 p {
+    color: var(--pinkcolor);
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--secondfont);
+}
+
+@media screen and (max-width:920px) {
+    .MainContainer .contents .contents1 {
+        flex-wrap: wrap;
+    }
+
+    .MainContainer .contents .content1 {
+        width: 100%;
+    }
+
+    .MainContainer .contents .contents1 .content2 {
+        width: 100%;
+    }
+
+    .MainContainer .contents .popular .populars {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /* content */
+    .MainContainer .contents .contents1 {
+        flex-wrap: wrap;
+    }
+
+    .MainContainer .contents .content1 {
+        width: 100% !important;
+    }
+
+    .MainContainer .contents .content1 .games .cards .card {
+        width: 100%;
+    }
+
+    .MainContainer .contents .contents1 .content2 {
+        width: 100%;
+    }
+
+    .MainContainer .contents .contents1 .content2 .downloads .game {
+        gap: 0;
+    }
+}
+
+.MainContainer .contents .stream h2 {
+    color: var(--pinkcolor);
+    font-family: var(--mainfont);
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.MainContainer .contents .stream h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.MainContainer .contents .streams {
+    width: 100%;
+    padding: 4vh 3%;
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.MainContainer .contents .streams .card {
+    width: 33%;
+    background-color: var(--DarkGrey);
+    padding: 3vh 2%;
+    border-radius: 20px;
+    border: 2px solid #e9e5e5;
+}
+
+.MainContainer .contents .streams .card img {
+    border-radius: 50%;
+}
+
+.MainContainer .contents .streams .card a {
+    color: aliceblue;
+    font-family: var(--secondfont);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.MainContainer .contents .streams .card p {
+    color: var(--LightGrey);
+    font-family: var(--secondfont);
+    font-size: 16px;
+}
+
+
+.MainContainer .contents .button button,
+.MainContainer .contents .popular .button button {
+    color: aliceblue;
+    background-color: var(--pinkcolor);
+    text-align: center;
+    font-family: var(--secondfont);
+    border: none;
+    padding: 2vh 3%;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .MainContainer .contents .streams {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .MainContainer .contents .streams .card {
+        width: 100%;
+    }
+}
+
+
+.MainContainer .contents .popular {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGrey);
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.MainContainer .contents .popular .populars {
+    width: 100%;
+    display: flex;
+    row-gap: 40px;
+    justify-content: space-between;
+}
+
+.MainContainer .contents .popular .populars .card .img img {
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.MainContainer .contents .popular .populars .card .parent {
+    display: flex;
+    gap: 20px;
+}
+
+.MainContainer .contents .popular .populars .card .parent .parent1 {
+    width: 20%;
+}
+
+.MainContainer .contents .popular .populars .card .parent .parent1 .img {
+    width: 10%;
+}
+
+.MainContainer .contents .popular .populars .card .parent .parent2 p .fa-circle-check {
+    background-color: aliceblue;
+    color: var(--pinkcolor);
+    border-radius: 50%;
+}
+
+.MainContainer .contents .popular .populars .card .parent .parent2 p {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .contents .popular .populars .card .parent .parent2 h3 {
+    color: aliceblue;
+}
+
+@media screen and (max-width:1280px) {
+    .MainContainer .contents .popular {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .MainContainer .contents .popular .populars {
+        flex-wrap: wrap;
+    }
+    .MainContainer .contents .populars .card {
+        padding: 0 20px;
+        width: 33%;
+    }
+    .MainContainer .contents .content1 .games .cards .card .data{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .MainContainer .contents .popular .populars {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.MainContainer .footer p {
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
