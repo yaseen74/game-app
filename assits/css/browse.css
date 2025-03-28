@@ -104,64 +104,6 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width:920px) {
-    .MainContainer .header {
-        display: block;
-    }
-
-    .hline {
-        display: none;
-    }
-
-    .MainContainer .header .logo {
-        width: 50%;
-        margin: auto;
-    }
-
-    .MainContainer .header .search {
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    .MainContainer .header ul {
-        width: 70%;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .MainContainer .header {
-        display: block;
-    }
-
-    .MainContainer .header .hline {
-        display: none;
-    }
-
-    .MainContainer .header .logo {
-        width: 50%;
-        margin: auto;
-    }
-
-    .MainContainer .header .search {
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    .MainContainer .header ul {
-        width: 100%;
-        margin: 0;
-    }
-
-    .MainContainer .header ul li {
-        padding: 0 7px;
-    }
-
-    .MainContainer .header ul li a {
-        font-size: 14px;
-    }
-}
-
 /* دول المحتوى */
 
 .MainContainer .contents {
@@ -313,47 +255,6 @@
     font-family: var(--secondfont);
 }
 
-@media screen and (max-width:920px) {
-    .MainContainer .contents .contents1 {
-        flex-wrap: wrap;
-    }
-
-    .MainContainer .contents .content1 {
-        width: 100%;
-    }
-
-    .MainContainer .contents .contents1 .content2 {
-        width: 100%;
-    }
-
-    .MainContainer .contents .popular .populars {
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width:600px) {
-
-    /* content */
-    .MainContainer .contents .contents1 {
-        flex-wrap: wrap;
-    }
-
-    .MainContainer .contents .content1 {
-        width: 100% !important;
-    }
-
-    .MainContainer .contents .content1 .games .cards .card {
-        width: 100%;
-    }
-
-    .MainContainer .contents .contents1 .content2 {
-        width: 100%;
-    }
-
-    .MainContainer .contents .contents1 .content2 .downloads .game {
-        gap: 0;
-    }
-}
 
 .MainContainer .contents .stream h2 {
     color: var(--pinkcolor);
@@ -419,16 +320,6 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width:600px) {
-    .MainContainer .contents .streams {
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    .MainContainer .contents .streams .card {
-        width: 100%;
-    }
-}
 
 
 .MainContainer .contents .popular {
@@ -478,6 +369,16 @@
     color: aliceblue;
 }
 
+
+.MainContainer .footer p {
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* media query */
+
 @media screen and (max-width:1280px) {
     .MainContainer .contents .popular {
         padding: 20px;
@@ -488,25 +389,126 @@
     .MainContainer .contents .popular .populars {
         flex-wrap: wrap;
     }
+
     .MainContainer .contents .populars .card {
         padding: 0 20px;
         width: 33%;
     }
-    .MainContainer .contents .content1 .games .cards .card .data{
+
+    .MainContainer .contents .content1 .games .cards .card .data {
         gap: 10px;
     }
 }
 
+@media screen and (max-width:920px) {
+    .MainContainer .header {
+        display: block;
+    }
+
+    .hline {
+        display: none;
+    }
+
+    .MainContainer .header .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .MainContainer .header .search {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .MainContainer .header ul {
+        width: 70%;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width:600px) {
+    .MainContainer .header {
+        display: block;
+    }
+
+    .MainContainer .header .hline {
+        display: none;
+    }
+
+    .MainContainer .header .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .MainContainer .header .search {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .MainContainer .header ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    .MainContainer .header ul li {
+        padding: 0 7px;
+    }
+
+    .MainContainer .header ul li a {
+        font-size: 14px;
+    }
+
     .MainContainer .contents .popular .populars {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
 
-.MainContainer .footer p {
-    color: aliceblue;
-    margin-top: 20px;
-    font-size: 20px;
-    text-align: center;
+    .MainContainer .contents .streams {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .MainContainer .contents .streams .card {
+        width: 100%;
+    }
+
+    /* content */
+    .MainContainer .contents .contents1 {
+        flex-wrap: wrap;
+    }
+
+    .MainContainer .contents .content1 {
+        width: 100% !important;
+    }
+
+    .MainContainer .contents .content1 .games .cards .card {
+        width: 100%;
+    }
+
+    .MainContainer .contents .contents1 .content2 {
+        width: 100%;
+    }
+
+    .MainContainer .contents .contents1 .content2 .downloads .game {
+        gap: 0;
+    }
+
+    .MainContainer .contents .contents1 {
+        flex-wrap: wrap;
+    }
+
+    .MainContainer .contents .content1 {
+        width: 100%;
+    }
+
+    .MainContainer .contents .contents1 .content2 {
+        width: 100%;
+    }
+
+    .MainContainer .contents .popular .populars {
+        flex-wrap: wrap;
+    }
+
+    .MainContainer .contents .populars .card{
+        width: 100%;
+    }
 }
