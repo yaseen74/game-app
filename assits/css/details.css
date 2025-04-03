@@ -3,13 +3,338 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #212121;
-    /* background-color: #272727; */
-}
 
 :root {
-    --fontcolor: #EC6090;
+    --DarkGrey: #212121;
+    --LightGrey: #5c5a5a;
+    --pinkcolor: #EC6090;
     --mainfont: "Tektur", sans-serif;
-    /* --secondfont: "Big Shoulders", sans-serif; */
+    --secondfont: "Big Shoulders", sans-serif;
+}
+
+.MainContainer {
+    width: 100%;
+    background-color: var(--DarkGrey);
+    padding: 3vh 7% 1vh;
+}
+
+/* دول الهيدر */
+
+.MainContainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MainContainer .header .logo {
+    width: 15%;
+}
+
+.MainContainer .header .logo img {
+    width: 100%;
+}
+
+.MainContainer .header .hline {
+    width: 1px;
+    height: 60px;
+    background-color: rgba(240, 248, 255, 0.247);
+}
+
+.MainContainer .header .search {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--LightGrey);
+    border-radius: 25px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 20px;
+}
+
+.MainContainer .header .search input {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 80%;
+    outline: none;
+}
+
+.MainContainer .header ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.MainContainer .header ul li a {
+    color: #666;
+    text-decoration: none;
+    font-family: var(--secondfont);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.MainContainer .header ul li a:hover,
+.MainContainer .header ul .active a {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .header ul .profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--LightGrey);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.MainContainer .header ul .profile:hover {
+    background-color: var(--pinkcolor);
+}
+
+.MainContainer .header ul .profile:hover a {
+    color: aliceblue;
+}
+
+.MainContainer .header ul .profile img {
+    border-radius: 50%;
+}
+
+/* content */
+.MainContainer .content {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGrey);
+    border-radius: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.MainContainer .content .imgs1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.MainContainer .content .imgs1 .img1 {
+    width: 30%;
+    border-radius: 30px;
+}
+
+.MainContainer .content .imgs1 .img2 {
+    width: 68%;
+    border-radius: 30px;
+}
+
+.MainContainer .content .h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: var(--mainfont);
+    margin-top: 20px;
+}
+
+.MainContainer .content .fortnites {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGrey);
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.MainContainer .content .fortnites .fortnite {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.MainContainer .content .fortnites .fortnite .leftfortnite {
+    width: 45%;
+    background-color: var(--LightGrey);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainContainer .content .fortnites .fortnite .leftfortnite .sandbox h3 {
+    color: aliceblue;
+}
+
+.MainContainer .content .fortnites .fortnite .leftfortnite .sandbox p {
+    color: #312f2f
+}
+
+.MainContainer .content .fortnites .fortnite .leftfortnite .stars p {
+    color: aliceblue;
+}
+
+.MainContainer .content .fortnites .fortnite .leftfortnite .stars p .fa-star {
+    color: yellow;
+}
+
+.MainContainer .content .fortnites .fortnite .leftfortnite .stars p .fa-download {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .content .fortnites .fortnite .rightfortnite {
+    width: 52%;
+    background-color: var(--LightGrey);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent {
+    width: 100%;
+}
+
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-star,
+.MainContainer .content .games .cards .card1 .data2 .icons p .fa-star {
+    color: yellow;
+}
+
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-download,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-hard-drive,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-gamepad ,
+.MainContainer .content .games .cards .card1 .data2 .icons p .fa-download {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .paragraphs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .paragraphs p,
+.MainContainer .content .games .cards .card1 .data2 .icons p {
+    color: aliceblue;
+}
+
+.MainContainer .content .fortnites .imgs2 {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.MainContainer .content .fortnites .imgs2 .img1,
+.MainContainer .content .fortnites .imgs2 .img2,
+.MainContainer .content .fortnites .imgs2 .img3 {
+    width: 31%;
+    border-radius: 30px;
+}
+
+.MainContainer .content .fortnites .h2 {
+    width: 100%;
+    color: #666;
+    font-family: var(--mainfont);
+    font-weight: bold;
+}
+
+.MainContainer .content .fortnites .button button {
+    color: aliceblue;
+    background-color: var(--pinkcolor);
+    text-align: center;
+    font-family: var(--secondfont);
+    border: none;
+    padding: 2vh 3%;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.MainContainer .content .fortnites .button button:hover {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+}
+
+/* start games */
+
+.MainContainer .content .games {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGrey);
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.MainContainer .content .games h2 {
+    color: var(--pinkcolor);
+    font-family: var(--mainfont);
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.MainContainer .content .games h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.MainContainer .content .games .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+
+.MainContainer .content .games .cards .card1 {
+    width: 50%;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.MainContainer .content .games .cards .card1 .data2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainContainer .content .games .cards .card1 .data2 .parent1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.MainContainer .content .games .cards .card1 .data2 .parent1 .img3 img {
+    border-radius: 30px;
+}
+
+.MainContainer .content .games .cards .card1 .data2 .parent1 .img3 img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.MainContainer .content .games .cards .card1 .data2 .parent1 .paragraphs h2 {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: var(--mainfont);
+}
+
+.MainContainer .content .games .cards .card1 .data2 .parent1 .paragraphs p {
+    color: #555;
+    font-family: var(--secondfont);
+}
+
+.MainContainer .footer p {
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
 }

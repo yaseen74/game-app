@@ -255,6 +255,12 @@
     font-family: var(--secondfont);
 }
 
+.MainContainer .contents .contents1 .content2 p:hover {
+    color: aliceblue;
+    background-color: var(--pinkcolor);
+    border-radius: 30px;
+}
+
 
 .MainContainer .contents .stream h2 {
     color: var(--pinkcolor);
@@ -320,7 +326,15 @@
     margin-top: 20px;
 }
 
+.MainContainer .contents .button button:hover {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+}
 
+.MainContainer .contents .popular .button button:hover {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+}
 
 .MainContainer .contents .popular {
     width: 100%;
