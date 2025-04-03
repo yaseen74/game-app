@@ -304,6 +304,8 @@
 
 }
 
+/* media query */
+
 /* header */
 @media screen and (max-width:920px) {
     .MainContainer .header {

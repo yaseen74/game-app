@@ -115,6 +115,8 @@
     text-align: center;
 }
 
+/* start contents1 */
+
 .MainContainer .contents .contents1 {
     width: 100%;
     display: flex;
@@ -261,6 +263,7 @@
     border-radius: 30px;
 }
 
+/* end contents1 */
 
 .MainContainer .contents .stream h2 {
     color: var(--pinkcolor);
