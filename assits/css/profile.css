@@ -3,13 +3,113 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #212121;
-    /* background-color: #272727; */
-}
 
 :root {
-    --fontcolor: #EC6090;
+    --DarkGrey: #212121;
+    --LightGrey: #5c5a5a;
+    --pinkcolor: #EC6090;
     --mainfont: "Tektur", sans-serif;
-    /* --secondfont: "Big Shoulders", sans-serif; */
+    --secondfont: "Big Shoulders", sans-serif;
 }
+
+.MainContainer {
+    width: 100%;
+    background-color: var(--DarkGrey);
+    padding: 3vh 7% 1vh;
+}
+
+/* header */
+.MainContainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MainContainer .header .logo {
+    width: 15%;
+}
+
+.MainContainer .header .logo img {
+    width: 100%;
+}
+
+.MainContainer .header .hline {
+    width: 1px;
+    height: 60px;
+    background-color: rgba(240, 248, 255, 0.247);
+}
+
+.MainContainer .header .search {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--LightGrey);
+    border-radius: 25px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 20px;
+}
+
+.MainContainer .header .search input {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 80%;
+    outline: none;
+}
+
+.MainContainer .header ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.MainContainer .header ul li a {
+    color: #666;
+    text-decoration: none;
+    font-family: var(--secondfont);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.MainContainer .header ul li a:hover,
+.MainContainer .header ul .active a {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .header ul .profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--LightGrey);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.MainContainer .header ul .profile:hover {
+    background-color: var(--pinkcolor);
+}
+
+.MainContainer .header ul .profile:hover a {
+    color: aliceblue;
+}
+
+.MainContainer .header ul .profile img {
+    border-radius: 50%;
+}
+
+/* content */
+.MainContainer .content {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGrey);
+    border-radius: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+

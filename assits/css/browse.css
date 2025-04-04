@@ -260,6 +260,7 @@
 .MainContainer .contents .contents1 .content2 p:hover {
     color: aliceblue;
     background-color: var(--pinkcolor);
+    padding: 3px 5px;
     border-radius: 30px;
 }
 
