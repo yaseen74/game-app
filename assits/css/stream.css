@@ -130,7 +130,7 @@
 /* start content1 */
 .MainContainer .contents .content1 {
     width: 100%;
-    padding: 2vh 2%;
+    padding: 5vh 5%;
     background-color: var(--DarkGrey);
     border-radius: 30px;
     margin-top: 30px;
@@ -209,12 +209,13 @@
 .MainContainer .contents .content1 .games .cards .card .data .dataleft p {
     font-size: 16px;
 }
+
 /* end content1 */
 
 /* start content2 */
 .MainContainer .contents .contents1 .content2 {
-    width: 50%;
-    padding: 2vh 2%;
+    width: 100%;
+    padding: 5vh 5%;
     background-color: var(--DarkGrey);
     border-radius: 30px;
     margin-top: 30px;
@@ -264,6 +265,7 @@
     color: var(--pinkcolor);
     background-color: aliceblue;
 }
+
 /* end content2 */
 
 /* end contents1 */
@@ -333,6 +335,7 @@
     color: var(--pinkcolor);
     background-color: aliceblue;
 }
+
 /* end popular */
 
 .MainContainer .footer p {
@@ -354,6 +357,7 @@
         display: none;
     }
 
+
     .MainContainer .header .logo {
         width: 50%;
         margin: auto;
@@ -367,6 +371,34 @@
     .MainContainer .header ul {
         width: 70%;
         margin: auto;
+    }
+
+}
+
+/* content */
+@media screen and (max-width:768px) {
+    .MainContainer .contents .content1 .games .cards .card {
+        width: 100%;
+    }
+
+    .MainContainer .contents .content1 .games .cards .card {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .MainContainer .contents .contents1 .content1 .games h1,
+    .MainContainer .contents .contents1 .content2 .downloads h2,
+    .MainContainer .contents .popular h2 {
+        color: var(--pinkcolor);
+        font-family: var(--mainfont);
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .MainContainer .contents .contents1 .content2 .downloads .streamers {
+        margin-bottom: 40px;
     }
 }
 
@@ -400,5 +432,10 @@
 
     .MainContainer .header ul li a {
         font-size: 14px;
+    }
+
+    /* content */
+    .MainContainer .contents .popular .populars {
+        justify-content: center;
     }
 }

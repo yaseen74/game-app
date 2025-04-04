@@ -201,25 +201,29 @@
     justify-content: space-around;
 }
 
-.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-star,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent1 p .fa-star,
 .MainContainer .content .games .cards .card1 .data2 .icons p .fa-star {
     color: yellow;
 }
 
-.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-download,
-.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-hard-drive,
-.MainContainer .content .fortnites .fortnite .rightfortnite .parent .icons p .fa-gamepad ,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent2 p .fa-download,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent3 p .fa-hard-drive,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent4 p .fa-gamepad ,
 .MainContainer .content .games .cards .card1 .data2 .icons p .fa-download {
     color: var(--pinkcolor);
 }
 
-.MainContainer .content .fortnites .fortnite .rightfortnite .parent .paragraphs {
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
-.MainContainer .content .fortnites .fortnite .rightfortnite .parent .paragraphs p,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent1 p,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent2 p,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent3 p,
+.MainContainer .content .fortnites .fortnite .rightfortnite .parent .parent4 p,
 .MainContainer .content .games .cards .card1 .data2 .icons p {
     color: aliceblue;
 }
@@ -341,7 +345,32 @@
 
 /* media query */
 
-/* header */
+@media screen  and (max-width:1290px) {
+    .MainContainer .content .imgs1 {
+        width: 100%;
+        display: block;
+    }
+
+    .MainContainer .content .imgs1 .img1 {
+        width: 80%;
+    }
+
+    .MainContainer .content .imgs1 .img2 {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:955px) {
+    .MainContainer .content .fortnites .fortnite .leftfortnite {
+        width: 100%;
+    }
+
+    .MainContainer .content .fortnites .fortnite .rightfortnite {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:920px) {
     .MainContainer .header {
         display: block;
@@ -364,6 +393,19 @@
     .MainContainer .header ul {
         width: 70%;
         margin: auto;
+    }
+}
+
+@media screen and (max-width:670px) {
+    /* content */
+    .MainContainer .content .games .cards {
+        width: 100%;
+        display: block;
+    }
+
+    .MainContainer .content .games .cards .card1 {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
@@ -397,5 +439,16 @@
 
     .MainContainer .header ul li a {
         font-size: 14px;
+    }
+
+    /* content */
+    .MainContainer .content .games .cards {
+        width: 100%;
+        display: block;
+    }
+
+    .MainContainer .content .games .cards .card1 {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }

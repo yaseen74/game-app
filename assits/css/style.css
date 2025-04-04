@@ -102,6 +102,8 @@
     border-radius: 50%;
 }
 
+/* content */
+
 .MainContainer .content {
     width: 100%;
     padding: 5vh 5%;
@@ -110,6 +112,7 @@
     margin-top: 50px;
 }
 
+/* start bannar */
 .MainContainer .content .bannar {
     width: 100%;
     background-image: url("../images/banner-bg.jpg");
@@ -153,7 +156,9 @@
     background-color: aliceblue;
     color: var(--pinkcolor);
 } 
+/* end bannar */
 
+/* start popular */
 .MainContainer .content .popular {
     width: 100%;
     padding: 5vh 5%;
@@ -231,7 +236,9 @@
 .MainContainer .content .popular .cards .card .data .fa-download {
     color: var(--pinkcolor);
 }
+/* end popular */
 
+/* start library */
 .MainContainer .content .library {
     background-color: var(--DarkGrey);
     width: 100%;
@@ -249,6 +256,7 @@
 .MainContainer .content .library .gaming .game {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
@@ -288,7 +296,9 @@
     color: var(--pinkcolor);
     border-color: var(--pinkcolor);
 }
+/* end library */
 
+/* start footer */
 .MainContainer .footer {
     width: 100%;
     color: aliceblue;
@@ -303,10 +313,24 @@
     font-family: var(--mainfont);
 
 }
+/* end footer */
 
 /* media query */
 
-/* header */
+@media screen and (max-width:1024px) {
+    .MainContainer .content .popular .cards .card .data .dataleft {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .MainContainer .content .library .gaming .game {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 20px 0;
+    }
+}
+
 @media screen and (max-width:920px) {
     .MainContainer .header {
         display: block;
@@ -329,6 +353,45 @@
     .MainContainer .header ul {
         width: 70%;
         margin: auto;
+    }
+
+    /* content */
+    .MainContainer .content .popular .cards .card {
+        width: 100%;
+
+    }
+
+    .MainContainer .content .popular .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+    .MainContainer .content .library .gaming .game {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .MainContainer .content .popular .cards .card {
+        width: 100%;
+
+    }
+
+    .MainContainer .content .popular .cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+    .MainContainer .content .library .gaming .game {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 20px 0;
     }
 }
 
@@ -362,5 +425,57 @@
 
     .MainContainer .header ul li a {
         font-size: 14px;
+    }
+
+    /* content */
+    .MainContainer .content .popular .cards .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .MainContainer .content .library .gaming .game {
+        width: 100%;
+        margin: 20px 0;
+        display: block;
+    }
+
+    .MainContainer .content .library .gaming .game img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .MainContainer .content .library .gaming .game p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:485px) {
+    .MainContainer .content .popular .cards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .MainContainer .content .popular .cards .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .MainContainer .content .library .gaming .game {
+        width: 100%;
+        margin: 20px 0;
+        display: block;
+    }
+
+    .MainContainer .content .library .gaming .game img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .MainContainer .content .library .gaming .game p {
+        margin-bottom: 10px;
     }
 }
