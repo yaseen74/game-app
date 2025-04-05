@@ -417,9 +417,7 @@
     .MainContainer .contents .content1 .games .cards .card .data {
         gap: 10px;
     }
-}
 
-@media screen and (max-width:1024px) {
     .MainContainer .contents .contents1 {
         display: block;
     }
