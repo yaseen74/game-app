@@ -335,9 +335,11 @@
     color: #555;
     font-family: var(--secondfont);
 }
+/* end games */
 
 .MainContainer .footer p {
     color: aliceblue;
+    font-family: var(--mainfont);
     margin-top: 20px;
     font-size: 20px;
     text-align: center;

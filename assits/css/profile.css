@@ -110,6 +110,464 @@
     background-color: var(--LightGrey);
     border-radius: 30px;
     margin-top: 10px;
+}
+/* start myself */
+.MainContainer .content .myself {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGrey);
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+/* start offline */
+.MainContainer .content .myself .offline {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MainContainer .content .myself .offline .parent {
+    width: 65%;
+    display: flex;
+    gap: 20px;
+}
+
+.MainContainer .content .myself .offline .parent .img img {
+    border-radius: 30px;
+}
+
+.MainContainer .content .myself .offline .parent .yaseen {
+    padding: 50px 0;
+}
+
+.MainContainer .content .myself .offline .parent .yaseen h1 {
+    color: aliceblue;
+    font-size: 25px;
+    font-family: var(--mainfont);
+    text-transform: capitalize;
+}
+
+.MainContainer .content .myself .offline .parent .yaseen p {
+    color: #555;
+    font-family: var(--secondfont);
+    text-transform: capitalize;
+}
+
+.MainContainer .content .myself .offline .list {
+    width: 30%;
+    padding: 5vh 5%;
+    background-color: var(--LightGrey);
+    border-radius: 30px;
+}
+
+.MainContainer .content .myself .offline .list .p1 {
+    display: flex;
+    gap: 50px;
+}
+
+.MainContainer .content .myself .offline .list .p2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainContainer .content .myself .offline .list .p3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainContainer .content .myself .offline .list .p4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainContainer .content .myself .offline .list .para .ch {
+    color: #1f1d1d;
+}
+
+.MainContainer .content .myself .offline .list .para .n {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .content .myself .offline .parent .yaseen .button1 {
+    margin-bottom: 10px;
+    color: aliceblue;
+    background-color: var(--pinkcolor);
+    text-align: center;
+    font-family: var(--secondfont);
+    border: none;
+    padding: 1vh 10%;
+    border-radius: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.MainContainer .content .myself .offline .parent .yaseen .button1:hover {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+    text-transform: capitalize;
+}
+
+.MainContainer .content .myself .offline .parent .yaseen .button2 {
+    margin-top: 10px;
+    padding: 1vh 12%;
+    color: var(--pinkcolor);
+    border: 1px solid var(--pinkcolor);
+    border-radius: 20px;
+    background-color: var(--DarkGrey);
+    text-transform: capitalize;
+}
+
+.MainContainer .content .myself .offline .parent .yaseen .button2:hover {
+    color: aliceblue;
+    background-color: var(--pinkcolor);
+    text-transform: capitalize;
+}
+/* end offline */
+
+/* start popular */
+.MainContainer .content .myself .popular h2 {
+    color: var(--pinkcolor);
+    font-family: var(--mainfont);
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.MainContainer .content .myself .popular h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.MainContainer .content .myself .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.MainContainer .content .myself .cards .card {
+    width: 23%;
+    background-color: var(--LightGrey);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.MainContainer .content .myself .cards .ch1 .backimg {
+    background-image: url("../images/clip-01.jpg");
+    background-size: 100% 100%;
+    padding: 10vh 5%;
+    width: 100%;
+    border-radius: 20px;
     text-align: center;
 }
 
+.MainContainer .content .myself .cards .ch2 .backimg {
+    background-image: url("../images/clip-02.jpg");
+    background-size: 100% 100%;
+    padding: 10vh 5%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.MainContainer .content .myself .cards .ch3 .backimg {
+    background-image: url("../images/clip-03.jpg");
+    background-size: 100% 100%;
+    padding: 10vh 5%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.MainContainer .content .myself .cards .ch4 .backimg {
+    background-image: url("../images/clip-04.jpg");
+    background-size: 100% 100%;
+    padding: 10vh 5%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.MainContainer .content .myself .cards .ch1 .backimg .fa-circle-play {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.MainContainer .content .myself .cards .ch2 .backimg .fa-circle-play {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.MainContainer .content .myself .cards .ch3 .backimg .fa-circle-play {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.MainContainer .content .myself .cards .ch4 .backimg .fa-circle-play {
+    color: var(--pinkcolor);
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.MainContainer .content .myself .cards .card .data {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: #757373;
+    font-family: var(--secondfont);
+    font-size: 18px;
+}
+
+.MainContainer .content .myself .cards .card .data h3 {
+    color: aliceblue;
+    font-family: var(--mainfont);
+}
+
+.MainContainer .content .myself .cards .card .data .dataright p .fa-eye {
+    color: var(--pinkcolor);
+}
+
+.MainContainer .content .myself .cards .card .data .dataright p {
+    color: aliceblue;
+}
+/* end popular */
+
+/* start library */
+.MainContainer .content .library {
+    background-color: var(--DarkGrey);
+    width: 100%;
+    padding: 5vh 5%;
+    border-radius: 30px;
+    margin-top: 50px;
+    /* margin: 50px auto; */
+    text-align: center;
+}
+
+.MainContainer .content .library h2 {
+    color: var(--pinkcolor);
+    font-family: var(--mainfont);
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.MainContainer .content .library h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.MainContainer .content .library .gaming {
+    width: 100%;
+}
+
+.MainContainer .content .library .gaming .game {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.MainContainer .content .library .gaming .game img {
+    border-radius: 20px;
+}
+
+.MainContainer .content .library .gaming .game h3 {
+    color: aliceblue;
+    font-family: var(--mainfont);
+    text-transform: capitalize;
+}
+
+.MainContainer .content .library .gaming .game p {
+    color: #666;
+    font-family: var(--secondfont);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.MainContainer .content .library .gaming .game button {
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #666;
+    padding: 8px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: var(--secondfont);
+    border-radius: 20px;
+}
+
+.MainContainer .content .library .gaming .game .btn {
+    color: var(--pinkcolor);
+    border-color: var(--pinkcolor);
+}
+/* end library */
+
+.MainContainer .footer p {
+    color: aliceblue;
+    font-family: var(--mainfont);
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width:1024px) {
+    .MainContainer .content .myself .offline {
+        width: 100%;
+        display: block;
+    }
+
+    .MainContainer .content .myself .offline .parent {
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .MainContainer .content .myself .offline .list {
+        width: 100%;
+    }
+
+    .MainContainer .content .myself .offline .list .p1 {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .MainContainer .header {
+        display: block;
+    }
+
+    .hline {
+        display: none;
+    }
+
+
+    .MainContainer .header .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .MainContainer .header .search {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .MainContainer .header ul {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* content */
+
+    .MainContainer .content .myself .cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .MainContainer .content .myself .cards .card {
+        width: 100%;
+    }
+
+    .MainContainer .content .library .gaming .game {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+
+}
+
+@media screen and (max-width:675px) {
+    .MainContainer .content .myself .offline .parent {
+        display: block;
+    }
+
+    .MainContainer .content .myself .offline .parent .img {
+        text-align: center;
+    }
+
+    .MainContainer .content .myself .offline .parent .img img {
+        width: 100%;
+    }
+
+    .MainContainer .content .myself .offline .parent .yaseen {
+        text-align: center;
+    }
+
+    .MainContainer .content .myself .cards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+
+    .MainContainer .content .library .gaming .game {
+        width: 100%;
+        margin: 20px 0;
+        display: block;
+    }
+
+    .MainContainer .content .library .gaming .game img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .MainContainer .content .library .gaming .game p {
+        margin-bottom: 10px;
+    }
+
+    .MainContainer .content .library .gaming .game img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .MainContainer .header {
+        display: block;
+    }
+
+    .MainContainer .header .hline {
+        display: none;
+    }
+
+    .MainContainer .header .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .MainContainer .header .search {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .MainContainer .header ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    .MainContainer .header ul li {
+        padding: 0 7px;
+    }
+
+    .MainContainer .header ul li a {
+        font-size: 14px;
+    }
+}
