@@ -404,6 +404,30 @@
     }
 }
 
+@media screen and (max-width:1250px) {
+    .MainContainer .contents .popular .populars {
+        flex-wrap: wrap;
+    }
+
+    .MainContainer .contents .populars .card {
+        padding: 0 20px;
+        width: 33%;
+    }
+
+    .MainContainer .contents .content1 .games .cards .card .data {
+        gap: 10px;
+    }
+
+    .MainContainer .contents .popular .populars {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .MainContainer .contents .popular .populars .card .parent .parent1 {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .MainContainer .contents .popular .populars {
         flex-wrap: wrap;
